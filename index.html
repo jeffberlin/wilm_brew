@@ -1,0 +1,66 @@
+<!-- wilmbrew.surge.sh -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="images/ilm_brew_logo_favicon_32x32.png">
+        <title>Wilmington Breweries</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/knockout.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="search">
+
+                <!-- <h1 data-bind="text: header"></h1> -->
+                <img src="images/ilm_brew_logo.png">
+
+            </div>
+
+            <div class="brewerynames">
+
+                <p><input id="pac-input" type="search" placeholder="Enter Name" data-bind="textInput: search"></p>
+
+                <ul data-bind="foreach: shops">
+
+                	<li data-bind="visible: showListing">
+
+                        <span data-bind="text: $data.title, click: $root.listItemClick"></span>
+
+                	</li>
+
+                </ul>
+
+            </div>
+
+            <div class="resetbutton">
+
+                <input id="reset" type="button" value="Reset" data-bind="click: resetMap">
+
+            </div>
+
+            <div id="map"></div>
+
+        </div>
+
+        <script type="text/javascript">
+            function googleError() {
+                alert("Google maps could not be loaded.");
+            }
+        </script>
+
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> --> 
+
+        <script src="js/main.js"></script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry&key=AIzaSyBBm40aIp8sWMP6uQviU7sUejki2GXiwVc&v=3&callback=window.initMap" onerror="googleError()" async defer></script>
+
+    </body>
+</html>

@@ -1,0 +1,114 @@
+html, body {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+}
+
+.container {
+  width: 230px;
+  height: 500px;
+  text-align: center;
+}
+
+.search {
+   padding-bottom: 1px;
+   border-bottom: 1px solid #92D346;
+}
+
+img {
+  width: 200px;
+  padding: 1rem;
+}
+
+/*h1 {
+   font-size: 22pt;
+   margin: 10px 0 10px 5px;
+   text-align: left;
+   letter-spacing: .55px;
+   color: #4E4F4F ;
+}*/
+
+#map {
+   bottom: 0px;
+   height: 100%;
+   left: 230px;
+   position: absolute;
+   right: 0px;
+   top: 0px;
+   border-left: 2px solid #92D346;
+}
+
+#pac-input {
+   width: 95%;
+   border: 1px solid grey;
+   margin-right: 5px;
+   margin-left: 5px;
+   outline: none;
+}
+
+#reset {
+  width: 72px;
+  background-color: #DDDDDE;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  font-size: 10pt;
+  padding: 4px;
+}
+
+#reset:hover {
+  cursor: pointer;
+  border: .5px solid grey;
+}
+
+#reset:active {
+  transform: translateY(2px);
+}
+
+li {
+ padding-top: 5px;
+ margin-left: -35px;
+ list-style: none;
+ /*color: #656565;*/
+ color: #417505;
+ opacity: .7;
+ text-align: left;
+}
+
+li span:hover {
+   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+
+  .container {
+    width: 100px;
+  }
+
+  #map {
+    left: 100px;
+  }
+
+  /*h1 {
+    font-size: 10pt;
+  }*/
+
+  img {
+    width: 80px;
+  }
+
+  #pac-input {
+    width: 90px;
+  }
+
+  li {
+    margin-left: -38px;
+  }
+
+  span {
+    border-bottom: 0.5px solid black;
+    font-size: 8pt;
+  }
+
+}
