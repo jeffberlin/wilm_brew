@@ -350,6 +350,17 @@ function AppViewModel() {
         foursquareId: '57c1d97d38fa48c7d5171a9e'
       }],
       showListing: ko.observable(true)
+    },
+    {
+      title: "Panacea Brewing Company",
+      locations: [{
+        location: {
+          lat: 34.244825,
+          lng: -77.866156
+        },
+        foursquareId: '5abfd1991f8ed65a8af5a309'
+      }],
+      showListing: ko.observable(true)
     }
   ]);
 
