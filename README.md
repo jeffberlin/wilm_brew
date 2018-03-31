@@ -4,5 +4,3 @@
 ### Venue information provided by Foursquare
 
 ## To view a live version:
-
-https://jeffberlin.github.io/Wilmington-Breweries/
