@@ -361,6 +361,17 @@ function AppViewModel() {
         foursquareId: '5abfd1991f8ed65a8af5a309'
       }],
       showListing: ko.observable(true)
+    },
+    {
+      title: "Edward Teach Brewing",
+      locations: [{
+        location: {
+          lat: 34.242657,
+          lng: -77.945317
+        },
+        foursquareId: '5a3479272632ec0374da7ade'
+      }],
+      showListing: ko.observable(true)
     }
   ]);
 
