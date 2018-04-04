@@ -5,6 +5,10 @@ html, body {
     font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 }
 
+ul {
+    padding-left: 0 !important;
+}
+
 /*.container {
     width: 230px;
     height: 500px;
@@ -29,16 +33,21 @@ img {
    color: #4E4F4F ;
 }*/
 
+.map {
+    margin-top: 7.4rem;
+}
+
 #map {
     border: 1px solid #92D346;
     height: 500px;
 }
 
 #pac-input {
-    width: 95%;
+    width: 50%;
     border: 1px solid grey;
     margin-right: 5px;
     margin-left: 5px;
+    margin-top: .5rem;
     outline: none;
 }
 
@@ -63,7 +72,7 @@ img {
 
 li {
     padding-top: 5px;
-    margin-left: -35px;
+    margin-left: 5px;
     list-style: none;
     /*color: #656565;*/
     color: #417505;
