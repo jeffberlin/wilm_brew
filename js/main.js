@@ -508,7 +508,7 @@ function AppViewModel() {
 			var zipCode = data.response.venue.location.postalCode ? data.response.venue.location.postalCode : " ";
 			var phone = data.response.venue.contact.formattedPhone ? data.response.venue.contact.formattedPhone : " ";
 
-			self.infowindow.setContent('<div>' + '<b>' + '<a target="_blank" href="' + venueURL + '">' + venue + '</a>' + '</b>' + '</div>' + '<div>' + address + '</div>' + '<div>' + city + ', ' + state + ' ' + zipCode + '<div>' + phone);
+			self.infowindow.setContent('<div>' + '<b>' + '<a target="_blank" href="' + venueURL + '">' + venue + '</a>' + '</b>' + '</div>' + '<div>' + address + '</div>' + '<div>' + city + ', ' + state + ' ' + zipCode + '</div>' + '<div>' + '<a href="tel:1-' + phone + '">' + phone + '</a>' + '</div>');
 			self.infowindow.open(map, marker);
 			console.log(data);
 		  }
